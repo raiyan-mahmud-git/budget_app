@@ -1,16 +1,19 @@
-Description
+# Description
 This project implements a simple budget management system using Python. It allows users to track deposits, withdrawals, transfers between categories, and visualize spending through a text-based chart.
-Features
+
+# Features
 Create budget categories (e.g., Food, Clothing, Entertainment)
 Deposit and withdraw money with descriptions
 Transfer funds between categories
 Check available balance
 Generate a formatted ledger output
 Display a percentage-based spending chart
-How It Works
+
+# How It Works
 Category Class
 Each category stores transactions in a ledger.
-Methods:
+
+# Methods:
 deposit(amount, description="")
 Adds money to the category.
 withdraw(amount, description="")
@@ -28,7 +31,8 @@ Takes a list of categories
 Calculates total withdrawals per category
 Converts them into percentages (rounded down to nearest 10)
 Displays a vertical bar chart using o markers
-Example Usage
+
+# Example Usage
 Python
 food = Category("Food")
 clothing = Category("Clothing")
@@ -40,11 +44,13 @@ clothing.deposit(500, "initial deposit")
 clothing.withdraw(100, "shirt")
 
 print(create_spend_chart([food, clothing]))
-Notes
+
+# Notes
 Only withdrawals (negative amounts) are used for the chart
 Percentages are rounded down to the nearest 10
 Output is text-based (no external libraries required)
-Project Difficulty
+
+# Project Difficulty
 This is a beginner-to-intermediate level project. It focuses on:
 Object-Oriented Programming (OOP)
 String formatting
